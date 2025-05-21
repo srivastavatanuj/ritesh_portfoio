@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #FFFFFF;
+}
+
+.title {
+  @apply md:text-3xl text-2xl text-yellow-400;
+}
+
+.subtitle {
+  @apply text-gray-600 italic md:text-3xl text-2xl;
+}
+
+.card_shadow {
+  box-shadow: 2px 6px 24px rgba(134, 136, 136, 0.6);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card_shadow:hover {
+  box-shadow: 2px 6px 24px rgba(45, 46, 46, 0.6);
+}
+
+
+.Section_Bg {
+  @apply py-6 md:py-16  bg-[#ebecee]
+}
+
+.Section_Container {
+  @apply max-w-6xl mx-auto text-center
+}
+
+.Section_Title{
+  @apply text-lg font-semibold text-[#95977e] uppercase tracking-wider
+}
+
+.Section_Heading{
+  @apply text-3xl font-bold text-black/70
+}
+
+.Section_Subheading{
+  @apply text-[#95977e] text-sm mt-1 md:mt-3 
+}
+
+.Section_Grid{
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-8 mx-4 lg:mx-0
+}
+
+.Input_Box{
+  @apply w-full p-2 mt-2 border rounded focus:outline-none focus:ring-2 focus:ring-gray-400
+}
