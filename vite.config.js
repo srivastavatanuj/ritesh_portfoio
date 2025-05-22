@@ -6,5 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist' // Yeh hi hona chahiye. Agar ../../dist hai toh error aayega
-  }
+  },
+    "routes": [
+    { "src": "/(.*)", "dest": "/" }
+  ]
 })
