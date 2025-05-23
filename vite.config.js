@@ -1,13 +1,8 @@
-// vite.config.js
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 
+// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  build: {
-    outDir: 'dist' // Yeh hi hona chahiye. Agar ../../dist hai toh error aayega
-  },
-    "routes": [
-    { "src": "/(.*)", "dest": "/" }
-  ]
-})
+  plugins: [react(), tailwindcss()],
+});
